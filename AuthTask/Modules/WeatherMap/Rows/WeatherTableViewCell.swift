@@ -43,9 +43,9 @@ class WeatherTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        imageIcon?.frame = CGRect(x: 16, y: 5, width: 46, height: 46)
-        labelMain?.frame = CGRect(x: (imageIcon?.calculateOffSetX())! + 4, y: 5, width: self.getWidth() - ((imageIcon?.calculateOffSetX())! + 4 + 16) , height: 20)
-        labelDescription?.frame = CGRect(x: (imageIcon?.calculateOffSetX())! + 4, y: (labelMain?.calculateOffSetY())! + 4, width: self.getWidth() - ((imageIcon?.calculateOffSetX())! + 4 + 16) , height: 18)
+        imageIcon?.frame = CGRect(x: Macros.shared.Margin, y: 5, width: 46, height: 46)
+        labelMain?.frame = CGRect(x: (imageIcon?.calculateOffSetX())! + 4, y: 5, width: self.getWidth() - ((imageIcon?.calculateOffSetX())! + 4 + Macros.shared.Margin) , height: 20)
+        labelDescription?.frame = CGRect(x: (imageIcon?.calculateOffSetX())! + 4, y: (labelMain?.calculateOffSetY())! + 4, width: self.getWidth() - ((imageIcon?.calculateOffSetX())! + 4 + Macros.shared.Margin) , height: 18)
     }
     
     func setCellLabel(main:String,description:String){

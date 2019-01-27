@@ -20,6 +20,11 @@ extension WeatherMapViewController:WeatherMapModelDelegate {
     
     func errorResponce(_ value: String, method: String) {
         
+        let alert = UIAlertController(title: "Something Went Wrong !!!", message: value, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

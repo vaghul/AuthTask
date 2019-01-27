@@ -45,6 +45,9 @@ class BaseModel: NSObject {
     {
 
     }
+    func isinternetavail() -> Bool{
+       return NetworkReachabilityManager()!.isReachable
+    }
 }
 extension Dictionary {
     

@@ -52,12 +52,18 @@ class MapScreenViewController: BaseViewController,UIGestureRecognizerDelegate {
         }
     }
     func navigateToNext(lat:Double,lng:Double){
-        if isnavigated == false{
-            isnavigated = true
-            let nextscreen = WeatherMapViewController()
-            nextscreen.lat = lat
-            nextscreen.lng = lng
-            self.navigationController?.pushViewController(nextscreen, animated: true)
+        if (model?.isinternetavail())! {
+            if isnavigated == false{
+                isnavigated = true
+                let nextscreen = WeatherMapViewController()
+                nextscreen.lat = lat
+                nextscreen.lng = lng
+                self.navigationController?.pushViewController(nextscreen, animated: true)
+            }
+        }else{
+            let alert = UIAlertController(title: "Internet unavailable", message: "Please check your internet connection and try again", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
    

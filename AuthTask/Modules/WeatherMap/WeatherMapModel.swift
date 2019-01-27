@@ -153,14 +153,13 @@ class WeatherMapModel: BaseModel {
         delegate?.recievedResponce(response, method: method)
     }
     override func errorRecieved(_ response: String,method:String) {
-        print(response)
         delegate?.errorResponce(response, method: method)
     }
     func getWeatherDetails(lat:Double,lng:Double){
         var param = [String:AnyObject]()
         param["lat"] = lat as AnyObject
         param["lon"] = lng as AnyObject
-        param["appid"] = "90939fb73bdb69b2c2cfa5ead4d164f" as AnyObject
-        sendGetRequest("https://api.openweathermap.org/data/2.5/weather", body: param, method: "weatherdetails")
+        param["appid"] = Macros.shared.appid as AnyObject
+        sendGetRequest(Macros.shared.WeatherApi, body: param, method: "weatherdetails")
     }
 }
