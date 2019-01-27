@@ -24,7 +24,7 @@ class WeatherMapViewController: BaseViewController {
         model = WeatherMapModel()
         model?.delegate = self
         self.title = "Weather Details"
-
+        myView?.showBlurLoader()
         model?.getWeatherDetails(lat: lat, lng: lng)
 
         // Do any additional setup after loading the view.

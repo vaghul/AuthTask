@@ -25,6 +25,7 @@ class MapScreenViewController: BaseViewController,UIGestureRecognizerDelegate {
         appdel.startUpdatinglocation()
         myView?.viewMap?.showsUserLocation = true
         setupMaps()
+        model?.preparePin()
     }
     func setupMaps(){
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(MapScreenViewController.handleLongPress(gestureReconizer:)))

@@ -10,5 +10,21 @@ import UIKit
 
 class MapScreenModel: BaseModel {
 
+    var arraypin = [AnyObject]()
+    
+    func preparePin(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let val = appDelegate.fetchRecordsForEntity("Entity", inManagedObjectContext: context)
+        for item in val {
+            var obj = [String:Any]()
+            obj["id"] = item.value(forKey: "id")
+            obj["city"] = item.value(forKey: "city")
+            obj["lat"] = item.value(forKey: "lat")
+            obj["lng"] = item.value(forKey: "lng")
+            arraypin.append(obj as AnyObject)
+        }
+        print(arraypin)
+    }
    
 }

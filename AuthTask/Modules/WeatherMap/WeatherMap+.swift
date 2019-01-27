@@ -12,6 +12,7 @@ import Kingfisher
 extension WeatherMapViewController:WeatherMapModelDelegate {
     func recievedResponce(_ value: [String : AnyObject], method: String) {
         if method == "weatherdetails"{
+            myView?.removeBluerLoader()
             myView?.viewTable?.delegate = self
             myView?.viewTable?.dataSource = self
             myView?.viewTable?.reloadData()
