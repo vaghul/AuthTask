@@ -7,21 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9135713116AE7E9FA7ED5535 /* Pods_AuthTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449B26EB5A860A3DFF0118E2 /* Pods_AuthTask.framework */; };
 		C1E87AB321FD7FE90035F813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AB221FD7FE90035F813 /* AppDelegate.swift */; };
-		C1E87AB521FD7FE90035F813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AB421FD7FE90035F813 /* ViewController.swift */; };
 		C1E87AB821FD7FE90035F813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E87AB621FD7FE90035F813 /* Main.storyboard */; };
 		C1E87ABA21FD7FF40035F813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E87AB921FD7FF40035F813 /* Assets.xcassets */; };
 		C1E87ABD21FD7FF40035F813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E87ABB21FD7FF40035F813 /* LaunchScreen.storyboard */; };
+		C1E87AC721FD81980035F813 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AC621FD81980035F813 /* BaseModel.swift */; };
+		C1E87AC921FD81C60035F813 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AC821FD81C60035F813 /* BaseView.swift */; };
+		C1E87ACB21FD82050035F813 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87ACA21FD82050035F813 /* BaseViewController.swift */; };
+		C1E87ACF21FD866F0035F813 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87ACE21FD866F0035F813 /* MapScreenViewController.swift */; };
+		C1E87AD121FD868C0035F813 /* MapScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AD021FD868C0035F813 /* MapScreenView.swift */; };
+		C1E87AD321FD86A50035F813 /* MapScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AD221FD86A50035F813 /* MapScreenModel.swift */; };
+		C1E87AD521FD86CC0035F813 /* WeatherMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AD421FD86CC0035F813 /* WeatherMapViewController.swift */; };
+		C1E87AD721FD87120035F813 /* WeatherMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AD621FD87120035F813 /* WeatherMapView.swift */; };
+		C1E87AD921FD875E0035F813 /* WeatherMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AD821FD875E0035F813 /* WeatherMapModel.swift */; };
+		C1E87ADB21FD88E50035F813 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87ADA21FD88E50035F813 /* UIView+Additions.swift */; };
+		C1E87AE021FD9BE00035F813 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87ADF21FD9BE00035F813 /* WeatherTableViewCell.swift */; };
+		C1E87AE221FD9EFA0035F813 /* WeatherMap+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AE121FD9EFA0035F813 /* WeatherMap+.swift */; };
+		C1E87AE421FDA11D0035F813 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E87AE321FDA11D0035F813 /* Kingfisher.framework */; };
+		C1E87AE621FDADB60035F813 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AE521FDADB60035F813 /* InfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		449B26EB5A860A3DFF0118E2 /* Pods_AuthTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D4EC371D44E0BA3903944E /* Pods-AuthTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTask/Pods-AuthTask.debug.xcconfig"; sourceTree = "<group>"; };
+		51A722833C46BB2C33085DAD /* Pods-AuthTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTask/Pods-AuthTask.release.xcconfig"; sourceTree = "<group>"; };
 		C1E87AAF21FD7FE90035F813 /* AuthTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E87AB221FD7FE90035F813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1E87AB421FD7FE90035F813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1E87AB721FD7FE90035F813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1E87AB921FD7FF40035F813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E87ABC21FD7FF40035F813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E87ABE21FD7FF40035F813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E87AC621FD81980035F813 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		C1E87AC821FD81C60035F813 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C1E87ACA21FD82050035F813 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C1E87ACE21FD866F0035F813 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		C1E87AD021FD868C0035F813 /* MapScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenView.swift; sourceTree = "<group>"; };
+		C1E87AD221FD86A50035F813 /* MapScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenModel.swift; sourceTree = "<group>"; };
+		C1E87AD421FD86CC0035F813 /* WeatherMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapViewController.swift; sourceTree = "<group>"; };
+		C1E87AD621FD87120035F813 /* WeatherMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapView.swift; sourceTree = "<group>"; };
+		C1E87AD821FD875E0035F813 /* WeatherMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapModel.swift; sourceTree = "<group>"; };
+		C1E87ADA21FD88E50035F813 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		C1E87ADF21FD9BE00035F813 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		C1E87AE121FD9EFA0035F813 /* WeatherMap+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherMap+.swift"; sourceTree = "<group>"; };
+		C1E87AE321FDA11D0035F813 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E87AE521FDADB60035F813 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E87AE421FDA11D0035F813 /* Kingfisher.framework in Frameworks */,
+				9135713116AE7E9FA7ED5535 /* Pods_AuthTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DD2EA417AA5471C3877227A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1E87AE321FDA11D0035F813 /* Kingfisher.framework */,
+				449B26EB5A860A3DFF0118E2 /* Pods_AuthTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1E87AA621FD7FE80035F813 = {
 			isa = PBXGroup;
 			children = (
 				C1E87AB121FD7FE90035F813 /* AuthTask */,
 				C1E87AB021FD7FE90035F813 /* Products */,
+				D1213AC97D3F2468DD2D6598 /* Pods */,
+				4DD2EA417AA5471C3877227A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +97,75 @@
 		C1E87AB121FD7FE90035F813 /* AuthTask */ = {
 			isa = PBXGroup;
 			children = (
+				C1E87AC421FD80720035F813 /* Modules */,
 				C1E87AB221FD7FE90035F813 /* AppDelegate.swift */,
-				C1E87AB421FD7FE90035F813 /* ViewController.swift */,
 				C1E87AB621FD7FE90035F813 /* Main.storyboard */,
 				C1E87AB921FD7FF40035F813 /* Assets.xcassets */,
 				C1E87ABB21FD7FF40035F813 /* LaunchScreen.storyboard */,
 				C1E87ABE21FD7FF40035F813 /* Info.plist */,
 			);
 			path = AuthTask;
+			sourceTree = "<group>";
+		};
+		C1E87AC421FD80720035F813 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C1E87ACD21FD86420035F813 /* WeatherMap */,
+				C1E87ACC21FD862A0035F813 /* MapScreen */,
+				C1E87AC521FD812D0035F813 /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C1E87AC521FD812D0035F813 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C1E87AC621FD81980035F813 /* BaseModel.swift */,
+				C1E87AC821FD81C60035F813 /* BaseView.swift */,
+				C1E87ACA21FD82050035F813 /* BaseViewController.swift */,
+				C1E87ADA21FD88E50035F813 /* UIView+Additions.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C1E87ACC21FD862A0035F813 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C1E87ACE21FD866F0035F813 /* MapScreenViewController.swift */,
+				C1E87AD021FD868C0035F813 /* MapScreenView.swift */,
+				C1E87AD221FD86A50035F813 /* MapScreenModel.swift */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		C1E87ACD21FD86420035F813 /* WeatherMap */ = {
+			isa = PBXGroup;
+			children = (
+				C1E87ADE21FD9BC30035F813 /* Rows */,
+				C1E87AD421FD86CC0035F813 /* WeatherMapViewController.swift */,
+				C1E87AD621FD87120035F813 /* WeatherMapView.swift */,
+				C1E87AD821FD875E0035F813 /* WeatherMapModel.swift */,
+				C1E87AE121FD9EFA0035F813 /* WeatherMap+.swift */,
+			);
+			path = WeatherMap;
+			sourceTree = "<group>";
+		};
+		C1E87ADE21FD9BC30035F813 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				C1E87ADF21FD9BE00035F813 /* WeatherTableViewCell.swift */,
+				C1E87AE521FDADB60035F813 /* InfoTableViewCell.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		D1213AC97D3F2468DD2D6598 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45D4EC371D44E0BA3903944E /* Pods-AuthTask.debug.xcconfig */,
+				51A722833C46BB2C33085DAD /* Pods-AuthTask.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1E87AC121FD7FF40035F813 /* Build configuration list for PBXNativeTarget "AuthTask" */;
 			buildPhases = (
+				1CB9979AC6A8F94F5D75AA5E /* [CP] Check Pods Manifest.lock */,
 				C1E87AAB21FD7FE90035F813 /* Sources */,
 				C1E87AAC21FD7FE90035F813 /* Frameworks */,
 				C1E87AAD21FD7FE90035F813 /* Resources */,
+				A0A577B6DE3AFCFCA195ACD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +236,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CB9979AC6A8F94F5D75AA5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A577B6DE3AFCFCA195ACD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AuthTask/Pods-AuthTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTask/Pods-AuthTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1E87AAB21FD7FE90035F813 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E87AB521FD7FE90035F813 /* ViewController.swift in Sources */,
+				C1E87AE021FD9BE00035F813 /* WeatherTableViewCell.swift in Sources */,
+				C1E87AD721FD87120035F813 /* WeatherMapView.swift in Sources */,
+				C1E87AE221FD9EFA0035F813 /* WeatherMap+.swift in Sources */,
+				C1E87AD921FD875E0035F813 /* WeatherMapModel.swift in Sources */,
+				C1E87AC921FD81C60035F813 /* BaseView.swift in Sources */,
+				C1E87ACB21FD82050035F813 /* BaseViewController.swift in Sources */,
+				C1E87ADB21FD88E50035F813 /* UIView+Additions.swift in Sources */,
+				C1E87AD321FD86A50035F813 /* MapScreenModel.swift in Sources */,
+				C1E87AC721FD81980035F813 /* BaseModel.swift in Sources */,
+				C1E87AD121FD868C0035F813 /* MapScreenView.swift in Sources */,
+				C1E87ACF21FD866F0035F813 /* MapScreenViewController.swift in Sources */,
+				C1E87AE621FDADB60035F813 /* InfoTableViewCell.swift in Sources */,
+				C1E87AD521FD86CC0035F813 /* WeatherMapViewController.swift in Sources */,
 				C1E87AB321FD7FE90035F813 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +439,11 @@
 		};
 		C1E87AC221FD7FF40035F813 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D4EC371D44E0BA3903944E /* Pods-AuthTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AuthTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaghul.AuthTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +459,11 @@
 		};
 		C1E87AC321FD7FF40035F813 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A722833C46BB2C33085DAD /* Pods-AuthTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AuthTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaghul.AuthTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
