@@ -29,6 +29,7 @@
 		C1E87AEB21FDB8D60035F813 /* AuthTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1E87AE921FDB8D60035F813 /* AuthTask.xcdatamodeld */; };
 		C1E87AED21FDBF500035F813 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E87AEC21FDBF500035F813 /* LaunchScreen.xib */; };
 		C1E87B1021FDCFA60035F813 /* MapScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87B0F21FDCFA60035F813 /* MapScreen+.swift */; };
+		C1E87B1221FDD6050035F813 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E87B1121FDD6050035F813 /* CustomAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C1E87AEA21FDB8D60035F813 /* WeatherModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherModel.xcdatamodel; sourceTree = "<group>"; };
 		C1E87AEC21FDBF500035F813 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C1E87B0F21FDCFA60035F813 /* MapScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapScreen+.swift"; sourceTree = "<group>"; };
+		C1E87B1121FDD6050035F813 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				C1E87AD021FD868C0035F813 /* MapScreenView.swift */,
 				C1E87AD221FD86A50035F813 /* MapScreenModel.swift */,
 				C1E87B0F21FDCFA60035F813 /* MapScreen+.swift */,
+				C1E87B1121FDD6050035F813 /* CustomAnnotation.swift */,
 			);
 			path = MapScreen;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				C1E87AE821FDB3300035F813 /* Macros.swift in Sources */,
 				C1E87ADB21FD88E50035F813 /* UIView+Additions.swift in Sources */,
 				C1E87AD321FD86A50035F813 /* MapScreenModel.swift in Sources */,
+				C1E87B1221FDD6050035F813 /* CustomAnnotation.swift in Sources */,
 				C1E87AC721FD81980035F813 /* BaseModel.swift in Sources */,
 				C1E87AD121FD868C0035F813 /* MapScreenView.swift in Sources */,
 				C1E87ACF21FD866F0035F813 /* MapScreenViewController.swift in Sources */,

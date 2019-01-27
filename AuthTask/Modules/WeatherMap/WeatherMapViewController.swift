@@ -14,6 +14,7 @@ class WeatherMapViewController: BaseViewController {
     var myView: WeatherMapView? { return self.view as? WeatherMapView }
     var lat:Double = 0.0
     var lng:Double = 0.0
+    var coreobj:AnyObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,12 @@ class WeatherMapViewController: BaseViewController {
         model = WeatherMapModel()
         model?.delegate = self
         self.title = "Weather Details"
-        myView?.showBlurLoader()
-        model?.getWeatherDetails(lat: lat, lng: lng)
+        if coreobj != nil {
+            model?.buildOfflineData(userdata: coreobj)
+        }else{
+            myView?.showBlurLoader()
+            model?.getWeatherDetails(lat: lat, lng: lng)
+        }
 
         // Do any additional setup after loading the view.
     }

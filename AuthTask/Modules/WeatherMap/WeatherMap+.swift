@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 
 extension WeatherMapViewController:WeatherMapModelDelegate {
-    func recievedResponce(_ value: [String : AnyObject], method: String) {
+    func recievedResponce(_ value: [String : AnyObject]?, method: String) {
         if method == "weatherdetails"{
             myView?.removeBluerLoader()
             myView?.viewTable?.delegate = self
@@ -37,8 +37,14 @@ extension WeatherMapViewController: UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
+            if model?.arrayweather == nil {
+                return 0
+            }
             return model?.arrayweather.count ?? 0
         }else{
+            if model?.arrayinfo == nil {
+                return 0
+            }
             return model?.arrayinfo.count ?? 0
         }
     }

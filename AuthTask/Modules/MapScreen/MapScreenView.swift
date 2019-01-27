@@ -24,6 +24,7 @@ class MapScreenView: BaseView {
     func onCreate(){
         self.backgroundColor = .white
         viewMap = MKMapView()
+        viewMap?.register(MKAnnotationView.self, forAnnotationViewWithReuseIdentifier: "custom")
         addSubview(viewMap!)
     }
     override func layoutSubviews() {

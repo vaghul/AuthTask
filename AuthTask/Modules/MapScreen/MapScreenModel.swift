@@ -22,9 +22,9 @@ class MapScreenModel: BaseModel {
             obj["city"] = item.value(forKey: "city")
             obj["lat"] = item.value(forKey: "lat")
             obj["lng"] = item.value(forKey: "lng")
+            obj["obj"] = item
             arraypin.append(obj as AnyObject)
         }
-        print(arraypin)
     }
    
 }

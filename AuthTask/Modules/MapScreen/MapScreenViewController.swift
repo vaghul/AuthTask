@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class MapScreenViewController: BaseViewController,UIGestureRecognizerDelegate {
     
@@ -24,8 +25,21 @@ class MapScreenViewController: BaseViewController,UIGestureRecognizerDelegate {
         let appdel =  UIApplication.shared.delegate as! AppDelegate
         appdel.startUpdatinglocation()
         myView?.viewMap?.showsUserLocation = true
+        myView?.viewMap?.delegate = self
         setupMaps()
+        addpins()
+        
+    }
+    func addpins(){
         model?.preparePin()
+        for item in (model?.arraypin)! {
+            let annotation = CustomAnnotation()
+            let centerCoordinate = CLLocationCoordinate2D(latitude: item["lat"] as! Double, longitude:item["lng"] as! Double)
+            annotation.coordinate = centerCoordinate
+            annotation.title = item["city"] as? String
+            annotation.userdata = item
+            myView?.viewMap?.addAnnotation(annotation)
+        }
     }
     func setupMaps(){
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(MapScreenViewController.handleLongPress(gestureReconizer:)))
