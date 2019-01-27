@@ -53,6 +53,8 @@ class MapScreenViewController: BaseViewController,UIGestureRecognizerDelegate {
         if isnavigated {
             isnavigated = false
         }
+        myView?.viewMap?.removeAnnotations(myView?.viewMap?.annotations)
+        addpins()
     }
     @objc func handleLongPress(gestureReconizer: UILongPressGestureRecognizer) {
         if gestureReconizer.state != UIGestureRecognizer.State.ended {
